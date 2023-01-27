@@ -16,17 +16,17 @@
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="./public/css/main.min.css" rel="stylesheet">
   </head>
   <body>
 
 <!-- Header-->
 
-    <header>
+    <header >
       <div class="container">
         <div class="navigation">
-          <a class="logo--primary" href="./index.html">
-            <span class="logo--secondary">Web</span>Studio</a>
+          <a class="logo" href="./index.html">
+            <span class="logo__primary">Web</span>Studio</a>
           <nav>
             <ul class="navigation__menu">
               <li class="navigation__item">
@@ -78,7 +78,7 @@
 
       <div class="container">
         <section class="section">
-          <ul class="assets__list">
+          <ul class="assets">
             <li class="assets__item">
               <div class="assets__icon">
                 <svg width="70px" height="70px">
@@ -138,13 +138,13 @@
           <h2 class="products__title">Czym się zajmujemy</h2>
           <ul class="products__list">
             <li class="products__item">
-              <div class="unit--background">
+              <div class="products__item--background">
                 <img
                   src="images/products/products-1.jpg"
                   alt="osoba pisząca na komputerze"
                   width="370"
                   height="294"/>
-                <p class="unit--description">Aplikacje komputerowe</p>
+                <p class="products__item--description">Aplikacje komputerowe</p>
               </div>
             </li>
             <li class="products__item">
@@ -343,45 +343,45 @@
       <div class="container">
         <section class="section">
           <h2 class="clients__title">Nasi klienci</h2>
-          <ul class="list">
+          <ul class="clients">
             <li class="clients__item">
-              <a class="item--border" href="#">
-                <svg class="icon--svg" width="106x" height="60.04px">
+              <a class="clients__link" href="#">
+                <svg class="clients__icon" width="106x" height="60.04px">
                   <use href="./images/icons.svg#icon-client1"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="item--border" href="#">
-                <svg class="icon--svg" width="106x" height="60.04px">
+              <a class="clients__link" href="#">
+                <svg class="clients__icon" width="106x" height="60.04px">
                   <use href="./images/icons.svg#icon-client2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="item--border" href="#">
-                <svg class="icon--svg" width="106x" height="60.04px">
+              <a class="clients__link" href="#">
+                <svg class="clients__icon" width="106x" height="60.04px">
                   <use href="./images/icons.svg#icon-client3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="item--border" href="#">
-                <svg class="icon--svg" width="106x" height="60.04px">
+              <a class="clients__link" href="#">
+                <svg class="clients__icon" width="106x" height="60.04px">
                   <use href="./images/icons.svg#icon-client4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="item--border" href="#">
-                <svg class="icon--svg" width="106x" height="60.04px">
+              <a class="clients__link" href="#">
+                <svg class="clients__icon" width="106x" height="60.04px">
                   <use href="./images/icons.svg#icon-client5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a class="item--border" href="#">
-                <svg class="icon--svg" width="106x" height="60.04px">
+              <a class="clients__link" href="#">
+                <svg class="clients__icon" width="106x" height="60.04px">
                   <use href="./images/icons.svg#icon-client6"></use>
                 </svg>
               </a>
@@ -412,33 +412,33 @@
               </li>
             </ul>
           </div>
-          <div class="socialmedia__box">
+          <div class="socialmedia">
             <p class="socialmedia__title">Dołącz do nas</p>
             <ul class="socialmedia__list">
               <li class="socialmedia__icon">
-                <a class="icons--border" href="#">
-                  <svg class="icon--svg" width="20x" height="20px">
+                <a class="socialmedia__link" href="#">
+                  <svg class="socialmedia__icon--svg" width="20x" height="20px">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="socialmedia__icon">
-                <a class="icons--border" href="#">
-                  <svg class="icon--svg" width="20x" height="20px">
+                <a class="socialmedia__link" href="#">
+                  <svg class="socialmedia__icon--svg" width="20x" height="20px">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="socialmedia__icon">
-                <a class="icons--border" href="#">
-                  <svg class="icon--svg" width="20x" height="20px">
+                <a class="socialmedia__link" href="#">
+                  <svg class="socialmedia__icon--svg" width="20x" height="20px">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="socialmedia__icon">
-                <a class="icons--border" href="#">
-                  <svg class="icon--svg" width="20x" height="20px">
+                <a class="socialmedia__link" href="#">
+                  <svg class="socialmedia__icon--svg" width="20x" height="20px">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -451,7 +451,7 @@
               <label>
                 <input class="newsletter__input" type="email" name="email" placeholder="E-mail"></label>
                 <button class="newsletter__button" type="submit">Zapisz się
-                  <svg class="icon--send" width="24px" height="24px">
+                  <svg class="newsletter__button--send" width="24px" height="24px">
                     <use href=./images/icons.svg#icon-icon-send></use>
                   </svg>
                 </button>
@@ -469,7 +469,7 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-        <p class="form__title">Zostaw swoje dane w formularzu poniżej</p>
+        <p class="form">Zostaw swoje dane w formularzu poniżej</p>
         <form class="form__item" name="userName">
          <label class="form__text">Imie<input class="form__input" name="userName" type="text">
           <svg class="icon--form" width="15" height="15">

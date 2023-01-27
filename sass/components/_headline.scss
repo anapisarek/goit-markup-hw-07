@@ -1,0 +1,28 @@
+.headline {
+    display: flex;
+    justify-content: center;
+  
+  &__title {
+    color: getColor('secondary-text');
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-top: 200px;
+    margin-bottom: 30px;
+  }
+  
+  &__background {
+    background-color: getColor('footer');
+    background-image: linear-gradient( 
+    to bottom,
+    rgba(47, 48, 58, 0.4) 50%,
+    rgba(47, 48, 58, 0.4) 50%),
+    url(../images/background-images/baner-background.jpg);
+    max-width: 1600px;
+    width: 100%;
+    margin: 0px;
+  }
+  
+  } 
