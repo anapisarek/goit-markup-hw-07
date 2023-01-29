@@ -1,9 +1,9 @@
 .headline {
-    display: flex;
-    justify-content: center;
-  
+  display: flex;
+  justify-content: center;
+    
   &__title {
-    color: getColor('secondary-text');
+    color: var(--white-text);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -14,15 +14,33 @@
   }
   
   &__background {
-    background-color: getColor('footer');
-    background-image: linear-gradient( 
-    to bottom,
-    rgba(47, 48, 58, 0.4) 50%,
-    rgba(47, 48, 58, 0.4) 50%),
-    url(../images/background-images/baner-background.jpg);
+    background-color: var(--footer-background);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4) 50%,
+      rgba(47, 48, 58, 0.4) 50%), url(../images/background-images/baner-background.jpg);
     max-width: 1600px;
     width: 100%;
     margin: 0px;
   }
   
-  } 
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+    
+    &--order {
+      color: var(--white-text);
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.06em;
+      background:  #2196f3;
+      border: 0px solid;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 10px 41px 10px 41px;
+    }
+  }
+}

@@ -1,15 +1,17 @@
-@import './utils/global';
-@import './utils/vars';
 @import './components/assets';
 @import './components/clients';
 @import './components/filter';
 @import './components/footer';
 @import './components/headline';
-@import './components/modal';
-@import './components/navigation';
-@import './components/products';
-@import './components/project';
-@import './components/team';
 @import './components/logo';
-@import './components/button-order';
+@import './components/navigation';
+@import './components/project';
 @import './components/socialmedia';
+@import './components/team';
+@import './utils/global';
+@import './utils/vars';
+@import './components/modal';
+@import './components/products';
+@import './components/form';
+
+

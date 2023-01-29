@@ -1,0 +1,162 @@
+.form {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    padding-top: 40px;
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 12px;
+    }
+    
+    &__text {
+        font-size:12px;
+        color: var(--main-description-color);
+        line-height: 14px;
+        letter-spacing: 0.03em;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    &__text > &__icon {
+        position:absolute;
+        top: 31px;
+        left:15px;
+    }
+
+    &__text input[type="text"] {
+        padding-left: 42px;
+    }
+    
+    &__text input[type="tel"] {
+        padding-left: 42px;
+    }
+
+    &__text input[type="email"] {
+        padding-left: 42px;
+    }  
+      
+    &__statement {
+        display: flex;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+        letter-spacing: 0.03em;
+    }
+
+    &__input {
+        width: 448px;
+        height:40px;
+        border-radius: 4px;
+        border: solid 1px #21212133;
+        margin-top: 4px;
+      
+        &--coment {
+            height: 120px;
+            width: 448px;
+            border-radius: 4px;
+            border: solid 1px #21212133;
+            margin-top: 4px;
+            resize: none;
+        }
+
+        &--coment::placeholder{
+            font-size: 12px;
+            color: #75757580;
+            line-height: 14px;
+        }
+    }
+
+    &__input:focus {
+        outline: 1px solid rgba(33, 150, 243, 1);
+        border-radius: 4px;
+    }
+
+    &__text &__input--coment[name="feedback"]{
+        padding-left: 16px;
+        padding-top: 12px;
+    }
+
+    &__statement{
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color:var(--main-description-color);
+        margin-left: 15px;
+        position:relative; 
+        line-height: 1.71;
+    }
+
+    &__statement::before {
+        display: block;
+        position: absolute;
+        left:-24px;
+        top:4px;
+        content: "";
+        width: 16px;
+        height:15px;
+        border: 2px solid rgba(33, 33, 33, 1);
+        border-radius: 4px;
+    }
+    
+    &__box {
+        appearance:none;
+    }
+
+    &__statement--policy {
+        margin-left: 3px;
+        margin-right: 3px;
+        color:var(--accent-color);
+        text-decoration: underline;
+    }
+
+    &__statement--sendbox{
+        width:200px;
+        height:50px;
+        border-radius:4px;
+        color: #FFFFFF;
+        background-color: #2196F3;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        border: none;
+        margin-top: 30px;
+    }
+
+    &__checkbox {
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        margin-top: -10px;
+    }
+}
+
+input:focus~.form__icon {
+    fill: var(--accent-color);
+}
+
+textarea:focus {
+  outline: 1px solid rgba(33, 150, 243, 1);
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__box:checked + .form__checked::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+    background-size: 11px 8px;
+    background-position: 3px 4px;
+    background-repeat:no-repeat;
+    background-color: rgba(33, 150, 243, 1);
+    border-radius: 2px;
+    border:none;
+} 
+  
