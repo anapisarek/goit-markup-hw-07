@@ -957,17 +957,6 @@ body {
   position: relative;
   line-height: 1.71;
 }
-.form__statement::before {
-  display: block;
-  position: absolute;
-  left: -24px;
-  top: 4px;
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid rgb(33, 33, 33);
-  border-radius: 4px;
-}
 .form__box {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1008,6 +997,42 @@ body {
           justify-content: center;
   margin-top: -10px;
 }
+.form____checkbox::before {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  left: 57px;
+  top: 452px;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 1.8px solid var(--main-text-color);
+  border-radius: 2px;
+}
+.form__checked {
+  position: relative;
+  padding-left: 23px;
+}
+.form__checked::before {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 4px;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 1.8px solid var(--main-text-color);
+  border-radius: 2px;
+}
+.form__checked--icon {
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  margin-right: 10px;
+}
 
 input:focus ~ .form__icon {
   fill: var(--accent-color);
@@ -1024,10 +1049,6 @@ textarea:focus {
 
 .form__box:checked + .form__checked::before {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
-  background-size: 11px 8px;
-  background-position: 3px 4px;
-  background-repeat: no-repeat;
-  background-color: rgb(33, 150, 243);
-  border-radius: 2px;
+  background-color: var(--accent-color);
   border: none;
 }/*# sourceMappingURL=main.css.map */
