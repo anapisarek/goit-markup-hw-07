@@ -1,0 +1,42 @@
+$font-main-color: #212121;
+$font-secondary-color: #757575;
+$hover-bg-color: #2196f3;
+$color-white: #ffffff;
+$color-black: #000000;
+$bg-dark-color: #2f303a;
+$bg-medium-color: #f5f4fa;
+$font-transparent: rgb(255 255 255 / 0.6);
+$nav-border-color: #ececec;
+$showcase-bg: rgba(47, 48, 58, 0.4);
+$social-bg-color: rgb(255 255 255 / 0.1);
+$default-icon-color: #afb1b8;
+$portfolio-overlay-color: rgb(33 150 243/ 0.9);
+$about-bg-color: rgb(47 48 58 / 0.8);
+$semi-transparent: rgb(0 0 0 /0.5);
+$form-semi-transparent: rgb(117 117 117 / 0.5);
+$form-border-color: rgba(33, 33, 33, 0.2);
+
+
+%font-main-body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: $font-main-color;
+}
+
+%form-color-transitions {
+  outline: none;
+  border: 1px solid $hover-bg-color;
+}
+
+@keyframes animateY-10 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

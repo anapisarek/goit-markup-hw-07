@@ -1,20 +1,32 @@
-.logo {
-  color: var(--black-text);
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  text-decoration: none;
-  margin-right: 93px;
+@use "../utils/variables.scss" as *;
+@use "../utils/mixins" as *;
 
-  &__primary {
-    color: var(--accent-color);
+.logo {
+  @include font-mixin($color-black, initial, 26px, 1.2, 0.03em);
+  // color: $color-black;
+  // font-weight: 700; - only this weight is loaded with Google Fonts, therefore there is no need to specify it*/
+  // font-size: 26px;
+  // line-height: 1.2;
+  // letter-spacing: 0.03em;
+  font-family: "Raleway";
+  margin-right: 93px;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* background-color: #212121; */ /*  -------- only to temporary preview box area*/
+  /* vertical-align: middle; */
+
+  &.logo-footer {
+    color: $color-white;
   }
 
-  &__tertiary {
-    color: var(--white-text);
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    text-decoration: none;
+  &:hover,
+  &:focus {
+    outline-color: $hover-bg-color;
+    outline-offset: 5px;
+    color: $hover-bg-color;
+  }
+
+  &__span {
+    color: $hover-bg-color;
   }
 }

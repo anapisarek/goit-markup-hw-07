@@ -1,17 +1,10 @@
-@import './components/assets';
-@import './components/clients';
-@import './components/filter';
-@import './components/footer';
-@import './components/headline';
-@import './components/logo';
-@import './components/navigation';
-@import './components/project';
-@import './components/socialmedia';
-@import './components/team';
-@import './utils/global';
-@import './utils/vars';
-@import './components/modal';
-@import './components/products';
-@import './components/form';
-
-
+@use "utils/variables" as *;
+@use "utils/mixins" as *;
+@use "components/globals-and-wrappers" as *;
+@use "components/logo" as *;
+@use "components/page-button" as *;
+@use "components/page-header" as *;
+@use "components/page-showcase" as *;
+@use "components/page-about-us" as *;
+@use "components/page-portfolio" as *;
+@use "components/page-footer" as *;

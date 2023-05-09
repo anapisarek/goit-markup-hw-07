@@ -1,0 +1,33 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.button {
+  @include font-mixin($color-white, 700, 16px, 1.875, 0.06em);
+  width: 200px;
+  //   color: $color-white;
+  //   font-weight: 700;
+  //   font-size: 16px;
+  //   line-height: 1.875;
+  //   letter-spacing: 0.06em;
+  padding: 10px 0px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: $hover-bg-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:focus {
+    outline-offset: 5px;
+    outline-color: $hover-bg-color;
+  }
+
+  &--active {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $color-white;
+      color: $bg-dark-color;
+    }
+  }
+}
